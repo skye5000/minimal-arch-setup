@@ -1,11 +1,11 @@
 cd ~
-yes | sudo pacman -S xorg-server xorg-xinit xorg-xset unclutter bspwm git
+sudo pacman -S rust xorg-server xorg-xinit xorg-xset unclutter bspwm git
 git clone https://aur.archlinux.org/aura-bin.git
 cd aura-bin
 makepkg -i
 cd ~
 rm aura-bin -rf
-yes | sudo aura -A xst greetd
+sudo aura -A xst greetd
 git clone https://github.com/skye5000/minimal-arch-setup.git
 cd minimal-arch-setup
 tar -xfv home.tar.gz -C ~
