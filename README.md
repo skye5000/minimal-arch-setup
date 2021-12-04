@@ -1,1 +1,1 @@
-`curl -o- https://raw.githubusercontent.com/skye5000/minimal-arch-setup/install.sh | bash`
+`curl -o- https://raw.githubusercontent.com/skye5000/minimal-arch-setup/main/install.sh | bash`
