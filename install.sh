@@ -1,4 +1,5 @@
 cd ~
+shopt -s dotglob
 sudo pacman -S git --noconfirm
 git clone https://aur.archlinux.org/aura-bin.git
 cd aura-bin
