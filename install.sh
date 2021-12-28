@@ -7,7 +7,7 @@ makepkg -i --noconfirm
 cd ~
 rm aura-bin -rf
 sudo aura -Syu xorg-server xorg-xinit xorg-xset unclutter bspwm noto-fonts noto-fonts-cjk noto-fonts-emoji --noconfirm
-sudo aura -Aax xst-git siji-git --noconfirm
+sudo aura -Aax xst-git siji-git polybar --noconfirm
 git clone https://github.com/skye5000/minimal-arch-setup.git
 mv minimal-arch-setup/* ~
 cd ~
