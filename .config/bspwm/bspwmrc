@@ -1,0 +1,18 @@
+#!/bin/bash
+unclutter -idle 1 -root &
+xset s off
+xset -dpms
+resetter() {
+	while true; do
+		xset s reset
+		sleep 30s
+	done
+}
+resetter &
+
+bspc config single_monocle true
+bspc config borderless_monocle true
+
+polybar example &
+# bspc rule -a xst-256color state=fullscreen &
+xrdb /home/user/.Xresources && xst &
