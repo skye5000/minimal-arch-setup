@@ -14,6 +14,7 @@ cd ~
 rm minimal-arch-setup -rf
 rm .terminfo -rf
 rm install.sh
+rm README.md
 sudo mkdir -p /etc/systemd/system/getty@tty1.service.d
 sudo mv override.conf /etc/systemd/system/getty@tty1.service.d/override.conf
 reboot
