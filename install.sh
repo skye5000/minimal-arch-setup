@@ -13,10 +13,6 @@ cd ~
 rm minimal-arch-setup -rf
 rm .terminfo -rf
 rm install.sh
-mkdir -p /etc/systemd/system/getty@tty1.service.d
-cat > /etc/systemd/system/getty@tty1.service.d/override.conf <<- "_EOF_"
-[Service]
-ExecStart=
-ExecStart=-/usr/bin/agetty --autologin user --noclear %I $TERM
-_EOF_
+sudo mkdir -p /etc/systemd/system/getty@tty1.service.d
+sudo mv override.conf /etc/systemd/system/getty@tty1.service.d/override.conf
 reboot
