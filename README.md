@@ -1,1 +1,1 @@
-`curl -L https://t.ly/92AM -O /tmp/install.sh && sudo bash /tmp/install.sh`
+`curl -L https://t.ly/92AM --output /tmp/install.sh && sudo bash /tmp/install.sh`
