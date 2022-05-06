@@ -1,11 +1,11 @@
 cd ~
 shopt -s dotglob
-sudo pacman -S git --noconfirm
-git clone https://aur.archlinux.org/aura-bin.git
-cd aura-bin
-makepkg -i --noconfirm
+pacman -S --needed git base-devel
+git clone https://aur.archlinux.org/yay.git
+cd yay
+makepkg -si
 cd ~
-rm aura-bin -rf
+rm yay -rf
 sudo aura -Syu xorg-server xorg-xinit xorg-xset unclutter bspwm noto-fonts noto-fonts-cjk noto-fonts-emoji --noconfirm
 sudo aura -Aax xst-git siji-git --noconfirm
 git clone https://github.com/skye5000/minimal-arch-setup.git
